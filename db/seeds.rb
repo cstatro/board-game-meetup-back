@@ -10,3 +10,4 @@ g1 = Game.create(name:"Container: 10th Anniversary Jumbo Edition",max_player: 5,
 u1 = (name: "colin",bio: "Loves dogs and being on time!", profile_pic:"https://i.kym-cdn.com/photos/images/newsfeed/001/505/718/136.jpg")
 u2 = (name: "nick",bio: "Loves Sour Beers and making sure thing happen on time!", profile_pic:"https://i.ytimg.com/vi/JnE5IU3884A/maxresdefault.jpg")
 
+UserGame.create(user:u1,game:g1)
