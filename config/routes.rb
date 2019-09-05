@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :meet_up_members
   resources :user_games
   resources :users
   resources :meetups
