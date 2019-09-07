@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "/games/:name", to: "games#show_by_name" 
   resources :meet_up_members
   resources :user_games
   resources :users

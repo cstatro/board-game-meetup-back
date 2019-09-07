@@ -6,7 +6,7 @@ class GamesController < ApplicationController
     end
 
     def show_by_name
-        game = game.find_by(name: params[:name])
+        game = Game.find_by(name: params[:name])
         render json: game
     end
 end
