@@ -33,3 +33,4 @@ module BoardGameMeetupBackend
     config.api_only = true
   end
 end
+
