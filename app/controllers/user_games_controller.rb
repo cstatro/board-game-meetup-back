@@ -5,6 +5,12 @@ class UserGamesController < ApplicationController
         render json: user_game
     end 
 
+    def destroy_game_copy
+         game = UserGame.find_by(user_id: params[:user_id],game_id: params[:game_id]).destroy
+         render json: game
+        
+    end
+
     def create
         user_game = UserGame.new(user_game_params)
         user_game.save
