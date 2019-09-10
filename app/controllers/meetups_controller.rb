@@ -11,7 +11,10 @@ class MeetupsController < ApplicationController
     end
 
     def user_meetups
-        user_meetups = Meetup.where(id: params[:id])
+        user = User.find(params[:user_id])
+        user_meetups = Meetup.all.select do |meetup|
+            !meetup.users.include?(user)
+        end
         render json: user_meetups
     end
 
