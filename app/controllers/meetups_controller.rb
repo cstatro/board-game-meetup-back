@@ -10,6 +10,11 @@ class MeetupsController < ApplicationController
         render json: meetups
     end
 
+    def user_meetups
+        user_meetups = Meetup.where(id: params[:id])
+        render json: user_meetups
+    end
+
     private
     def meetup_params
         params.require(:meetup).permit(:game_id,:notes,:end_time,:start_time,:player_count)
