@@ -12,6 +12,6 @@ class MeetupsController < ApplicationController
 
     private
     def meetup_params
-        params.require(:meetup).permit(:game_id,:notes,:end_time,:start_time)
+        params.require(:meetup).permit(:game_id,:notes,:end_time,:start_time,:player_count)
     end
 end
