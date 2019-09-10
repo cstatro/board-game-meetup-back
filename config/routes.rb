@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   resources :users
   resources :meetups
   resources :games
+
+  # post '/open/meetups', to: 
+
   post '/signup', to: "users#signup"
   post '/login', to: "auth#login"
   get '/autologin', to: "auth#autologin"
