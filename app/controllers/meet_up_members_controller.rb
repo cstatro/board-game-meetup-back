@@ -12,4 +12,4 @@ class MeetUpMembersController < ApplicationController
 
 end
 
-
+ 
