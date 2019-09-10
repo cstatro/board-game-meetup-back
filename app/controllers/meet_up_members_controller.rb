@@ -7,7 +7,7 @@ class MeetUpMembersController < ApplicationController
 
     private
     def member_params
-        params.require(:member).permit(:user_id,:game_id,:host)
+        params.require(:member).permit(:user_id,:meetup_id,:host)
     end
 
 end
