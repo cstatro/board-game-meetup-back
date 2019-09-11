@@ -11,5 +11,3 @@ class MeetUpMembersController < ApplicationController
     end
 
 end
-
- 
