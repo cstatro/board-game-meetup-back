@@ -16,4 +16,11 @@ class Meetup < ApplicationRecord
         end
     end
 
+    def full_game 
+        if (self.open_seat == 0)
+            true
+        else 
+            false
+        end
+    end 
 end

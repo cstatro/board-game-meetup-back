@@ -13,7 +13,7 @@ class MeetupsController < ApplicationController
     def user_meetups
         user = User.find(params[:user_id])
         user_meetups = Meetup.all.select do |meetup|
-            !meetup.users.include?(user)
+            !meetup.users.include?(user) && !meetup.full_game
         end
         render json: user_meetups
     end
